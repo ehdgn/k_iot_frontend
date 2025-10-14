@@ -26,6 +26,7 @@ setTimeout(runlater, 2000); // Hello, 이승아^^
 // >> The "callback" argument must be of type function. Received undefined
 // >> 콜백 함수의 인자는 undefined(비워져 있음)여야만 한다!
 
+
 // cf) 콜백 함수의 인자 전달 방법
 // : 세 번째 인자부터 나열되는 값이 함수의 매개변수로 전달
 setTimeout(runlater, 3000, '이도경'); // Hello, 이도경^^
