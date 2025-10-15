@@ -62,7 +62,7 @@ function updateQuantity(id, quantity) {
   // 상품이 존재하고 변경할 수량이 0보다 커야만 상품 업데이트 가능
   if (idx > -1 && quantity > 0) {
     // 업데이트
-    cart[idx].quantity += quantity;
+    cart[idx].quantity = quantity;
   } else {
     console.log('유효하지 않은 상품이거나 수량이 0보다 커야 합니다.');
   }
