@@ -13,7 +13,7 @@ import { TodoManager } from "./TodoManager.js";
 const todoManger = new TodoManager();
 
 // 콘텐츠 로드 이벤트 실행
-document,addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   // ! HTML 요소 가져오기
   const form = document.querySelector('#new-todo-form');
   const input = document.querySelector('#new-todo');
