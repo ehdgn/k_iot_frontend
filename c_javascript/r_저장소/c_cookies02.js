@@ -42,4 +42,4 @@ console.log("userAge: " + userAge);
 document.cookie = "username=이승아; path=/";
 
 let changeUsername = getCookieValue('username');
-console.log(changeUsername);
+console.log(changeUsername);0
