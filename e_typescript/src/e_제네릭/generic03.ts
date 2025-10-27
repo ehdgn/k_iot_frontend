@@ -61,7 +61,6 @@ const users: ObjectSignature = {
 function UpdateUser(id: number, changes: Partial<User>) {
   const user = users[id];
 
-
   if(!user) {
     console.log('해당 id의 사용자는 없습니다.');
     return;
