@@ -10,7 +10,7 @@ type User = {
   email: string;
 }
 
-type UserCardProps = { user:User};
+type UserCardProps = { user:User };
 
 // 구조 분해 할당
 const UserCard = ({ user }: UserCardProps) => {
