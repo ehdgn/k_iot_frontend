@@ -10,8 +10,8 @@ import G_Props from './G_Props';
 import H_Props from './H_Props';
 import I_Rendering from './I_Rendering';
 import J_Handler from './J_Handler';
-import Z_Example01 from './Z_Example01';
-import Z_Example02 from './Z_Example02';
+import Z_Example01 from '../../_practices/a_basic/Example01';
+import Z_Example02 from '../../_practices/a_basic/Example02';
 
 const h2Style = {
   backgroundColor: 'black',
