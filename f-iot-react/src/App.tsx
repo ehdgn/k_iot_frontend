@@ -3,6 +3,7 @@ import './App.css'
 import Basic from '@/pages/a_basic';
 import RoutePages from '@/pages/b_route';
 import Hooks from '@/pages/c_hooks';
+import HTTP from '@/pages/d_http';
 
 import Navibar from './components/Navibar';
 import PostList from './_practices/a_basic/PostList';
@@ -18,7 +19,7 @@ function App() {
   return (
     <>
       {/* 경로와 상관없이 렌더링  */}
-      <h1>Korea IoT React</h1>
+      <h3>Korea IoT React</h3>
       <Navibar />
 
       {/* Routes 태그: Route를 감싸는 컴포넌트 */}
@@ -31,6 +32,8 @@ function App() {
         <Route path='/route/*' element={<RoutePages />} />
 
         <Route path='/hooks' element={<Hooks />} />
+        <Route path='/http' element={<HTTP />} />
+      
 
         <Route path='/practice/post' element={<PostList />}/>
         <Route path='/practice/post/:id' element={<PostDetail />} />
