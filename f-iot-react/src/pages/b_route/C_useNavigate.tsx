@@ -23,7 +23,7 @@ function C_useNavigate() {
   const goForward = () => {
     navigate(1); // 앞으로 가기
   }
-
+  
   return (
     <div>
       <h4>useNavigate 예제</h4>
