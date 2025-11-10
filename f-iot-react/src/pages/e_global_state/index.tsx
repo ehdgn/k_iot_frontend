@@ -1,22 +1,22 @@
 import ToggleSection from '@/components/ToggleSection'
 import React from 'react'
-import B_Axios from './B_Axios'
-import C_ArticlePage from './C_ArticlePage'
+import A_Context from './A_Context'
+import B_Zustand from './B_Zustand'
 
 function Index() {
   return (
     <div>
       <h1 style={{ backgroundColor: "black", color: "white" }}>
-        === 리액트 HTML 통신 ===
+        === 리액트 전역 상태 관리 ===
       </h1>
       
-      <ToggleSection title="1. Axios">
-        <B_Axios />
+      <ToggleSection title="1. Context API">
+        <A_Context />
+      </ToggleSection>
+      <ToggleSection title="2. Zustand">
+        <B_Zustand />
       </ToggleSection>
 
-      <ToggleSection title="2. Article(REST API + REACT)">
-        <C_ArticlePage/>
-      </ToggleSection>
     </div>
   )
 }
