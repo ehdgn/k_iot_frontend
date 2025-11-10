@@ -13,7 +13,7 @@ interface SignInResponse {
 }
 
 export const signIn = async (data: SignInRequest): Promise<SignInResponse> => {
-  const res = await publicApi.post('/auth.sign-in', data);
+  const res = await publicApi.post('/auth/sign-in', data);
 
   if (!res.data.success) throw new Error('Login Failed');
   return res.data.data;
