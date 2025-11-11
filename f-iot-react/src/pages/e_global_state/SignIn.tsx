@@ -9,7 +9,6 @@ function SignIn() {
 
   const navigate = useNavigate();
   const { login, isLoading, error} = useAuthStore();
-
   
   //^ === Event Handler ===
   const handleSubmit = async (e: React.FormEvent) => {
