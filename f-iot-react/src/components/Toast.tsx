@@ -18,7 +18,7 @@ function Toast() {
 
   const closeButtonStyle: React.CSSProperties = {
     position: 'absolute',
-    top: '4px',
+    top: '1px',
     right: '8px',
     fontSize: '14px',
     color: '#ccc',
