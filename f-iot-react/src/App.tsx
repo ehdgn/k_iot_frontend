@@ -5,6 +5,7 @@ import RoutePages from '@/pages/b_route';
 import Hooks from '@/pages/c_hooks';
 import HTTP from '@/pages/d_http';
 import GlobalState from '@/pages/e_global_state'
+import Style from '@/pages/f_style'
 
 import Navibar from './components/Navibar';
 import PostList from './_practices/a_basic/PostList';
@@ -65,6 +66,7 @@ function App() {
         <Route path='/hooks' element={<Hooks />} />
         <Route path='/http' element={<HTTP />} />
         <Route path='/global-state' element={<GlobalState />} />
+        <Route path='/style' element={<Style />} />
         
         <Route path='/practice/post' element={<PostList />}/>
         <Route path='/practice/post/:id' element={<PostDetail />} />
