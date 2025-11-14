@@ -1,3 +1,4 @@
+import { useTheme } from '@emotion/react';
 import styled from '@emotion/styled';
 import React from 'react'
 import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
@@ -19,6 +20,8 @@ const ChartBox = styled.div`
 `
 
 function SalesChartRecharts() {
+  const theme = useTheme();
+
   return (
     <ChartBox>
       {/*
@@ -35,15 +38,24 @@ function SalesChartRecharts() {
           {/* CartesianGrid: 차트 배경에 격자선 (Grid) */}
           {/* 속성: strokeDasharray: 점선을 3px 그려짐 + 3px 비워짐 */}
           <CartesianGrid strokeDasharray="3 3" strokeOpacity={0.06} />
+          {/* "X축": 어떤 데이터 집합을 구성할지 나열 */}
           <XAxis dataKey='name' tick={{ fontSize: 12 }} />
           <YAxis tick={{ fontSize: 12 }} />
           {/* 마우스 hover 시 데이터 값을 보여주는 팝업 출력 */}
-          <Tooltip />
+          <Tooltip 
+            contentStyle={{
+              backgroundColor: theme.colors.background,
+              border: 'none',
+              borderRadius: '6px'
+            }}
+          />
           {/*
             type: 곡선 형태 설정 (monotone-일반곡선, linear-직선, step-계단형, basis-더 부드러운 곡선)
 
             dataKey: 데이터 배열의 Y값 설정
           */}
+
+          {/* "Y축": 데이터, Line이 어떤 필드를 그릴지 결정하고 + Y축 기준 데이터를 받아 YAxis는 자동 스케일만 계산  */}
           <Line
             type='monotone'
             dataKey='sales' 
